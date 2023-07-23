@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Transfer App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img id="logo" src="easysharelogo.png" alt="EasyShare">
+  <div class="container">
+    <h1>Welcome to EasyShare App</h1>
+    <p>Choose Send or Recieve File</p>
+    <div class="options">
+       <button class="button-64" role="button" id="senderBtn"><span class="text">Send</span></button>
+       <button class="button-64" role="button" id="receiverBtn"><span class="text">Recieve</span></button>
+    </div>
+  </div>
+</body>
+</html>
+
+  <script>
+ document.getElementById('senderBtn').addEventListener('click', function() {
+  window.location.href = 'sender.html';
+});
+
+document.getElementById('receiverBtn').addEventListener('click', function() {
+  window.location.href = 'receiver.html';
+});
+
+  </script>
+</body>
+</html>
